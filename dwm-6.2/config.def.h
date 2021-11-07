@@ -25,14 +25,14 @@
 
 /* appearance */
 static const unsigned int borderpx          = 4;                /* border pixel of windows */
-static const int gappx                      = 4;               /* gaps between windows */
+static const int gappx                      = 8;               /* gaps between windows */
 static const unsigned int snap              = 32;               /* snap pixel */
 static const unsigned int systraypinning    = 0;                /* 0: sloppy systray follows selected monitor, >0: pin systray to monitor X */
 static const unsigned int systrayspacing    = 2;                /* systray spacing */
 static const int systraypinningfailfirst    = 1;                /* 1: if pinning fails, display systray on the first monitor, False: display systray on the last monitor*/
 static const int showsystray                = 1;                /* 0 means no systray */
 static const int showbar                    = 1;                /* 0 means no bar */
-static const int topbar                     = 0;                /* 0 means bottom bar */
+static const int topbar                     = 1;                /* 0 means bottom bar */
 
 static const char *fonts[]                  = { "Symbols Nerd Font:style=bold:style=Bold:size=15:antialias=true:autohint:true"};
 static const char dmenufont[]               =   "Hack:size=13";
@@ -224,16 +224,16 @@ static Key keys[] = {
     {0,                                 XF86XK_AudioStop,           spawn,              {.v = c_pause       }},
     {0,                                 XF86XK_AudioNext,           spawn,              {.v = c_next        }},
     {0,                                 XF86XK_AudioPrev,           spawn,              {.v = c_prev        }},
-    {0,                                 XK_Print,                   spawn,              {.v = screenshot    }},
-    {0,                                 XK_KP_Next,                 spawn,              {.v = atom          }},
-    {0,                                 XK_KP_Left,                 spawn,              {.v = pcmanfm       }},
-    {0,                                 XK_KP_Begin,                spawn,              {.v = vlc           }},
-    {0,                                 XK_KP_Right,                spawn,              {.v = qbittorrent   }},
-    {0,                                 XK_KP_Up,                   spawn,              {.v = discord       }},
-    {0,                                 XK_KP_Prior,                spawn,              {.v = spotify       }},
-    {0,                                 XK_KP_End,                  spawn,              {.v = clock         }},
-    {0,                                 XK_KP_Home,                 spawn,              {.v = freetube      }},
-    {0,                                 XK_KP_Down,                 spawn,              {.v = cal           }},
+    {MODKEY,                                 XK_Print,                   spawn,              {.v = screenshot    }},
+    {MODKEY,                                 XK_KP_Next,                 spawn,              {.v = atom          }},
+    {MODKEY,                                 XK_KP_Left,                 spawn,              {.v = pcmanfm       }},
+    {MODKEY,                                 XK_KP_Begin,                spawn,              {.v = vlc           }},
+    {MODKEY,                                 XK_KP_Right,                spawn,              {.v = qbittorrent   }},
+    {MODKEY,                                 XK_KP_Up,                   spawn,              {.v = discord       }},
+    {MODKEY,                                 XK_KP_Prior,                spawn,              {.v = spotify       }},
+    {MODKEY,                                 XK_KP_End,                  spawn,              {.v = clock         }},
+    {MODKEY,                                 XK_KP_Home,                 spawn,              {.v = freetube      }},
+    {MODKEY,                                 XK_KP_Down,                 spawn,              {.v = cal           }},
     {0,                                 XF86XK_AudioRaiseVolume,    spawn,              {.v = upvol         }},
     {0,                                 XF86XK_AudioLowerVolume,    spawn,              {.v = downvol       }},
     {0,                                 XF86XK_AudioMute,           spawn,              {.v = mutevol       }},
