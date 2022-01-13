@@ -5,14 +5,15 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Symbols Nerd Font:style-2048-em:size=16:antialias=true:autohint=true";
+static char *font = "Fira Code:size=19";
 /* Spare fonts */
 static char *font2[] = {
-	"Inconsolata for Powerline:pixelsize=16:antialias=true:autohint=true", 
-	"Hack Nerd Font Mono:pixelsize=16:antialias=true:autohint=true",
+	"JoyPixels:pixelsize=20:antialias=true:autohint=true",
+	"Symbols Nerd Font:pixelsize=20:antialias=true:autohint=true",
+	"Inconsolata for Powerline:pixelsize=20:antialias=true:autohint=true", 
 };
 
-static int borderpx = 0;
+static int borderpx = 4;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -117,12 +118,12 @@ char *termname = "st-256color";
  */
 unsigned int tabspaces = 8;
 /* bg opacity */
-float alpha = 0.9, alphaUnfocused = 0.8;
+float alpha = 0.9, alphaUnfocused = 0.7;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
   /* 8 normal colors */
-  [0] = "#2E3440", /* hard contrast:#252933 #2E3440 #1d2021 / soft contrast: #32302f */
+  [0] = "#1d2021", /* hard contrast:#252933 #2E3440 #1d2021 / soft contrast: #32302f */
   [1] = "#cc241d", /* red     */
   [2] = "#98971a", /* green   */
   [3] = "#d79921", /* yellow  */

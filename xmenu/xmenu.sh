@@ -35,7 +35,8 @@ IMG:$path/tools.png	Tools
 	IMG:$path/kiwix	kiwix	kiwix-desktop
 IMG:$path/chat.png	Chat
 	IMG:$path/discord.png	Discord	discord
-	IMG:$path/element-desktop-nightly.png	Element-dekstop-nightly	element-dekstop-nightly
+	IMG:$path/element-desktop-nightly.png	Element-dekstop	element-dekstop
+	IMG:$path/signal.png	signal	signal-desktop
 IMG:$path/media.png	Media
 	IMG:$path/vlc.png	vlc	vlc
 	IMG:$path/mpv.png	mpv	mpv
