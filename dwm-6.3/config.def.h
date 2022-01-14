@@ -2,7 +2,7 @@
 #include <X11/XF86keysym.h>
 
 /* appearance */
-static const unsigned int borderpx      = 2;        /* border pixel of windows */
+static const unsigned int borderpx      = 4;        /* border pixel of windows */
 static const int gappx                  = 5;                 /* gaps between windows */
 static const unsigned int snap          = 32;       /* snap pixel */
 static const unsigned int systraypinning= 0;   /* 0: sloppy systray follows selected monitor, >0: pin systray to monitor X */
@@ -53,7 +53,7 @@ static const Rule rules[] = {
 static const float mfact     = 0.55; /* factor of master area size [0.05..0.95] */
 static const int nmaster     = 1;    /* number of clients in master area */
 static const int resizehints = 0;    /* 1 means respect size hints in tiled resizals */
-static const int lockfullscreen = 0; /* 1 will force focus on the fullscreen window */
+static const int lockfullscreen = 1; /* 1 will force focus on the fullscreen window */
 
 static const Layout layouts[] = {
 	/* symbol     arrange function */
