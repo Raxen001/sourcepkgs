@@ -26,8 +26,8 @@ static const char aqua[]                = "#689D6A";
 static const char orange[]              = "#D65D0E";
 static const char *colors[][3]          = {
 	/*               fg         bg         border   */
-	[SchemeNorm] = { white, gray, gray },
-	[SchemeSel]  = { red,   gray, red  },
+	[SchemeNorm] = { white, black, gray },
+	[SchemeSel]  = { red,   black, red  },
 };
 
 /* tagging */
@@ -53,7 +53,7 @@ static const Rule rules[] = {
 static const float mfact     = 0.55; /* factor of master area size [0.05..0.95] */
 static const int nmaster     = 1;    /* number of clients in master area */
 static const int resizehints = 0;    /* 1 means respect size hints in tiled resizals */
-static const int lockfullscreen = 0; /* 1 will force focus on the fullscreen window */
+static const int lockfullscreen = 1; /* 1 will force focus on the fullscreen window */
 
 static const Layout layouts[] = {
 	/* symbol     arrange function */
@@ -83,7 +83,7 @@ static const char terminal[10] =  "alacritty";
 /*       Scratch pad */
 static const char *term[]           = { "t", terminal, "-o", "background_opacity=1", "-t", "term",   NULL};
 static const char *cmus[]           = { "c", terminal, "--class", "CmusPlayerScratch,CmusPlayerScratch", "-e", "cmus",   NULL};
-static const char *ytfzf[]          = { "y", terminal, "-t", "youtube", "-e","ytfzf", "-lt", "--detach", NULL};
+static const char *ytfzf[]          = { "y", terminal, "-t", "youtube", "-e","ytfzf", "--detach", "-lt", NULL};
 static const char *ytfzfs[]         = { "s", terminal, "-t", "subs", "-e","ytfzf", "-lt", "-cS", "--sort", "--detach", NULL};
 static const char *nnn[]            = { "r", terminal, "-t", "nnn", "-e", "zsh", "/home/raxen/.local/configs/scripts/nnn.sh", NULL};
 //static const char *nnn[]            = { "r", terminal, "-t", "nnn", "-e", "nnn","-ad", NULL};
