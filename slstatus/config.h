@@ -23,7 +23,7 @@
 /* See LICENSE file for copyright and license details. */
 
 /* interval between updates (in ms) */
-const unsigned int interval = 1000;
+const unsigned int interval = 500;
 
 /* text to show if no value can be retrieved */
 static const char unknown_str[] = "n/a";
@@ -91,6 +91,7 @@ static const struct arg args[] = {
 	/* function format          argument */
 //    { netspeed_rx  , "^b#1d2021^^c#98971A^       %s | ", "wlp4s0"},
 //    { netspeed_tx  , "祝%s          ","wlp4s0"},
+    { run_command  , "^b#1d2021^^c#d79921^ 🎵 %s ", "/home/raxen/.local/configs/sourcepkgs/slstatus/components/music_notify.sh"},
 	{ ram_used     , "^b#1d2021^^c#689D6A^         ﬙ %s", NULL },
 	{ ram_total    , "/%s          ", NULL},
 // 	{ run_command  , "^b#1d2021^^c#B16286^                    %s                   ", "amixer -c 1 -M sget Master | awk -F\"[][]\" '/%/ { print $2 }' | head -n1 | sed 's/.$//'" },
