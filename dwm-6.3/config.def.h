@@ -85,8 +85,8 @@ static const char terminal[10] =  "alacritty";
 /*       Scratch pad */
 static const char *term[]           = { "t", terminal, "-o", "background_opacity=1", "-t", "term",   NULL};
 static const char *cmus[]           = { "c", terminal, "--class", "CmusPlayerScratch,CmusPlayerScratch", "-e", "cmus",   NULL};
-static const char *ytfzf[]          = { "y", terminal, "-t", "youtube", "-e","ytfzf", "-lt", "--detach", NULL};
-static const char *ytfzfs[]         = { "s", terminal, "-t", "subs", "-e","ytfzf", "-lt", "-cS", "--sort", "--detach", NULL};
+static const char *ytfzf[]          = { "y", terminal, "-t", "youtube", "-e","ytfzf", "-lt", "--force-youtube",  "--detach", NULL};
+static const char *ytfzfs[]         = { "s", terminal, "-t", "subs", "-e","ytfzf", "-lt", "-cS", "--sort", "--force-youtube",  "--detach", NULL};
 static const char *nnn[]            = { "r", terminal, "-t", "nnn", "-e", "zsh", "/home/raxen/.local/configs/scripts/nnn.sh", NULL};
 //static const char *nnn[]            = { "r", terminal, "-t", "nnn", "-e", "nnn","-ad", NULL};
 static const char *dict[]           = { "d", terminal, "-t", "dict", "-e", "sdcv",   "--color=auto", NULL};
