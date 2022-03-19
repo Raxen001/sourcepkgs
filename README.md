@@ -31,7 +31,7 @@
 
     It is a super fast terminal made by suckless
 
-## Demnu
+## Dmenu
 
     Appliation runner by suckless
 
