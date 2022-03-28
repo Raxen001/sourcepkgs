@@ -2,7 +2,7 @@
 #include <X11/XF86keysym.h>
 
 /* appearance */
-static const unsigned int borderpx      = 4;        /* border pixel of windows */
+static const unsigned int borderpx      = 3;        /* border pixel of windows */
 static const int gappx                  = 8;                 /* gaps between windows */
 static const unsigned int snap          = 32;       /* snap pixel */
 static const unsigned int systraypinning= 0;   /* 0: sloppy systray follows selected monitor, >0: pin systray to monitor X */
@@ -77,13 +77,13 @@ static const Layout layouts[] = {
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[] = { "dmenu_run", NULL };
+static const char *dmenucmd[] = { "dmenu_run", "-i", NULL };
 static const char *termcmd[]  = { "alacritty", NULL };
 static const char terminal[10] =  "alacritty";
 
 /*       First arg only serves to match against key in rules    */
 /*       Scratch pad */
-static const char *term[]           = { "t", terminal, "-o", "background_opacity=1", "-t", "term",   NULL};
+static const char *term[]           = { "t", terminal, "-o", "window.opacity=1", "-t", "term",   NULL};
 static const char *cmus[]           = { "c", terminal, "--class", "CmusPlayerScratch,CmusPlayerScratch", "-e", "cmus",   NULL};
 static const char *ytfzf[]          = { "y", terminal, "-t", "youtube", "-e","ytfzf", "-lt", "--force-youtube",  "--detach", NULL};
 static const char *ytfzfs[]         = { "s", terminal, "-t", "subs", "-e","ytfzf", "-lt", "-cS", "--sort", "--force-youtube",  "--detach", NULL};
