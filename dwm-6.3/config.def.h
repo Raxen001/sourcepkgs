@@ -2,7 +2,7 @@
 #include <X11/XF86keysym.h>
 
 /* appearance */
-static const unsigned int borderpx      = 3;        /* border pixel of windows */
+static const unsigned int borderpx      = 4;        /* border pixel of windows */
 static const int gappx                  = 8;                 /* gaps between windows */
 static const unsigned int snap          = 32;       /* snap pixel */
 static const unsigned int systraypinning= 0;   /* 0: sloppy systray follows selected monitor, >0: pin systray to monitor X */
@@ -79,6 +79,7 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-i", NULL };
 static const char *termcmd[]  = { "alacritty", NULL };
+//static const char *termcmd[]  = { "st", NULL };
 static const char terminal[10] =  "alacritty";
 
 /*       First arg only serves to match against key in rules    */
