@@ -143,7 +143,8 @@ static const char *screenshot[]     = { "bash", "/home/raxen/.local/configs/scri
 static const char *slock[]          = {"slock", NULL};
 static const char *suspend[]        = {"systemctl", "suspend", NULL};
 static const char *shut[]           = { "bash", "/home/raxen/.local/configs/scripts/dmscripts.sh", NULL};
-static const char *xmenu[]          = { "bash", "/home/raxen/.local/configs/sourcepkgs/xmenu/xmenu.sh", NULL};
+//static const char *xmenu[]          = { "bash", "/home/raxen/.local/configs/sourcepkgs/xmenu/xmenu.sh", NULL};
+static const char *jgmenu[]          = { "jgmenu", NULL};
 static const char *dunst[]          = { "dunstctl", "close-all", NULL };
 
 
@@ -266,5 +267,5 @@ static Button buttons[] = {
 	{ ClkTagBar,            0,              Button3,        toggleview,     {0} },
 	{ ClkTagBar,            MODKEY,         Button1,        tag,            {0} },
 	{ ClkTagBar,            MODKEY,         Button3,        toggletag,      {0} },
-    {ClkRootWin, 0, Button3, spawn, {.v = xmenu}},
+    {ClkRootWin, 0, Button3, spawn, {.v = jgmenu}},
 };
