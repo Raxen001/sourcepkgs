@@ -1,7 +1,6 @@
 #! /bin/sh
 # Author: RaxenGamer001 <raxen001@tutamail.com>
 # Date: 2021-06-06
-# Dependency: ffmpeg ffmpegthumbnailer
 # Optional: mpc (for mpd support)
 # ascii_art:
 # 
@@ -15,7 +14,6 @@
 #   ░░   ░   ░   ▒    ░    ░     ░      ░   ░ ░ 
 #    ░           ░  ░ ░    ░     ░  ░         ░ 
 #                                               
-img="$HOME"/.cache/music-thumb.png
 #---cmus---
 if pgrep -x "cmus" >/dev/null
 then

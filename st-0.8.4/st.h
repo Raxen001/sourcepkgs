@@ -96,6 +96,7 @@ void copyurl(const Arg *);
 int tattrset(int);
 int tisaltscr(void);
 void tnew(int, int);
+int tisaltscreen(void);
 void tresize(int, int);
 void tsetdirtattr(int);
 void ttyhangup(void);

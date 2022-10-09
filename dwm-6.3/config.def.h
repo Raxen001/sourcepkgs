@@ -13,7 +13,7 @@ static const int systraypinningfailfirst= 1;   /* 1: if pinning fails, display s
 #define ICONSPACING 8 /* space between icon and title */
 static const int showsystray            = 1;     /* 0 means no systray */
 static const int showbar                = 1;        /* 0 means no bar */
-static const int topbar                 = 0;        /* 0 means bottom bar */
+static const int topbar                 = 1;        /* 0 means bottom bar */
 static const char *fonts[]              = { "Symbols Nerd Font:size=18:antialias=true:autohint:true"};
 
 static const char black[]               = "#1d2021";
@@ -34,7 +34,7 @@ static const char *colors[][3]          = {
 
 /* tagging */
 //static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
-static const char *tags[] = {"", "", "ﬓ", ""};
+static const char *tags[] = {"", "", "ﬓ", "", "Ɍ", "ʊ", "", "", ""};
 
 static const Rule rules[] = {
 	/* xprop(1):
