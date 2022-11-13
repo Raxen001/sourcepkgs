@@ -93,10 +93,10 @@ static const struct arg args[] = {
 //    { netspeed_tx  , "祝%s          ","wlp4s0"},
     { run_command  , "^b#1d2021^^c#d79921^ 🎵 %s ", "/home/raxen/.local/configs/sourcepkgs/slstatus/components/music_notify.sh"},
 	{ ram_used     , "^b#1d2021^^c#689D6A^         ﬙ %s", NULL },
-	{ ram_total    , "/%s          ", NULL},
+	{ ram_total    , "/%s    ", NULL},
 // 	{ run_command  , "^b#1d2021^^c#B16286^                    %s                   ", "amixer -c 1 -M sget Master | awk -F\"[][]\" '/%/ { print $2 }' | head -n1 | sed 's/.$//'" },
 //   { run_command  , "^b#1d2021^^c#d79921^                    %s                   ", "brightnessctl -d 'amdgpu_bl0' -m | awk -F ',' '{ print $4 }' | sed 's/.$//' "},
-	{ battery_perc , "^b#1d2021^^c#458588^                   %s ", "BAT0"},
-    { battery_state, "%s                 ", "BAT0"},
+	{ battery_perc , "^b#1d2021^^c#458588^      %s ", "BAT0"},
+    { battery_state, "%s     ", "BAT0"},
 	{ datetime     , "^b#1d2021^^c#fb4834^ %s   ", "%a %b %d %l:%M %p"},
 };

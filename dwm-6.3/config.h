@@ -13,7 +13,7 @@ static const int systraypinningfailfirst= 1;   /* 1: if pinning fails, display s
 #define ICONSPACING 8 /* space between icon and title */
 static const int showsystray            = 1;     /* 0 means no systray */
 static const int showbar                = 1;        /* 0 means no bar */
-static const int topbar                 = 1;        /* 0 means bottom bar */
+static const int topbar                 = 0;        /* 0 means bottom bar */
 static const char *fonts[]              = { "Symbols Nerd Font:size=18:antialias=true:autohint:true"};
 
 static const char black[]               = "#1d2021";
@@ -28,13 +28,15 @@ static const char aqua[]                = "#689D6A";
 static const char orange[]              = "#D65D0E";
 static const char *colors[][3]          = {
 	/*               fg         bg         border   */
-	[SchemeNorm] = { white, gray, white },
-	[SchemeSel]  = { red,   gray, red  },
+	/*[SchemeNorm] = { white, gray, white },
+	[SchemeSel]  = { red,   gray, red  },*/
+    [SchemeNorm] = { white, black, gray },
+	[SchemeSel]  = { purple,   black, red  },
 };
 
 /* tagging */
-//static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
-static const char *tags[] = {"", "", "ﬓ", "", "Ɍ", "ʊ", "", "", ""};
+static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
+//static const char *tags[] = {"", "", "ﬓ", "", "Ɍ", "ʊ", "", "", ""};
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -52,7 +54,7 @@ static const Rule rules[] = {
 };
 
 /* layout(s) */
-static const float mfact     = 0.55; /* factor of master area size [0.05..0.95] */
+static const float mfact     = 0.50; /* factor of master area size [0.05..0.95] */
 static const int nmaster     = 1;    /* number of clients in master area */
 static const int resizehints = 0;    /* 1 means respect size hints in tiled resizals */
 static const int lockfullscreen = 0; /* 1 will force focus on the fullscreen window */
